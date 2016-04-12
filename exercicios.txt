@@ -1,0 +1,22 @@
+
+- Implementar uma página web que seja estruturada com três colunas:
+
+---------------------------------
+|	     Titulo		|
+| -----------------------------	|
+|	   |	     |		|
+|  seção   |inscrever| noticias	|
+|   de	   |   se    |	        |
+| imagens  |	     | noticias |
+|	   |	     |   	|
+|	   |	     |    	|
+---------------------------------
+
+- Seção de imagens:
+		deverá conter imagens responsivas que mostrem um breve comentário
+		feito com o tooltip explicado.
+- Inscrever-se:	
+		ter um modal que abra um formulário para a "inscrição" dos usuarios.
+- Noticias: 
+		ter uma lista de noticias fake interessantes (que não levam a lugar algum),
+		mas que tenham uma espécie de resumo como popover.

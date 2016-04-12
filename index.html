@@ -9,15 +9,18 @@
     <title>Trabalho de DAW - bootstrap</title>
 
     <style>
+    a, a:hover, a:active, a:visited{
+      text-decoration: none;
+    }
     .msmTamanho{
       height: 100px;
     }
     #peModal{
-      background-color: #0047b3;
+      background-color: #262626;
       color: #FFF;
     }
     #cabecaModal{
-      background-color: #0047b3;
+      background-color: #262626;
       color: #FFF;
       font-weight: bold;
     }
@@ -29,24 +32,35 @@
     <center><h1>Trabalho de DAW - bootstrap</h1></center>
     <center><h2>Tooltips</h2></center>
 
+
+
+<!--Inicio da parte do código dedicado ao tooltip-->
       <div class="col-md-4 well msmTamanho">
         <h3>
-        <center><a href="#" data-toggle="tooltip" data-placement="left" title="Um tooltip é um aviso que salta na tela quando você sobrepõe seu mouse ao link." style="text-decoration: none; color:#0073e6;">Se esfregue em mim plz</a></center>
+        <center><a href="#" data-toggle="tooltip" data-placement="left" title="Um tooltip é um aviso que salta na tela quando você sobrepõe seu mouse ao link.">Se esfregue em mim plz</a></center>
         </h3>
       </div>
+
+      <!--Fim da parte do código dedicado ao tooltip-->
+
+      <!--Início da parte do código dedicado ao popover-->
+
       <div class="col-md-4 well msmTamanho">
         <h3>
           <center><a href="#" title="Popover" data-toggle="popover" data-placement="bottom" data-content="Isto é um popover, quando você clica nele ele te dá atenção e abre uma janelinha com título e corpod o texto para você.">Clique em mim!</a></center>
         </h3>
       </div>
+<!--Fim da parte do código dedicado ao popover-->
+
+      <!--Botão para toggle do modal-->
       <div class="col-md-4 well msmTamanho">
-        <h3><center><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#meuModal">Abra o seu modaaaal</button></center></h3>
+        <h3><center><button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#meuModal">Abra o seu modaaaal</button></center></h3>
       </div>
+      <!------------------------------>
 
       <!-- Modal -->
       <div id="meuModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
-
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header" id="cabecaModal">
@@ -57,9 +71,11 @@
               <p>Eis o grande modal! Louvai!.</p>
             </div>
             <div class="modal-footer" id="peModal">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
             </div>
           </div>
+
+<!--Início da parte do código dedicado ao modal-->
 
         </div>
       </div>
@@ -68,7 +84,7 @@
     <script>
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
-    });
+      });
 
     $(document).ready(function(){
         $('[data-toggle="popover"]').popover();
